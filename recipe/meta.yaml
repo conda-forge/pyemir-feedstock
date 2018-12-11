@@ -1,8 +1,8 @@
 {% set name = "pyemir" %}
-{% set version = "0.10" %}
+{% set version = "0.11" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "21e74bf615675bf4d5b3a45e4d788dcda111eda891f66f09d396361be8664013" %}
+{% set hash_value = "1b25bc32f448efb354c320b2c456794ce2bbe868a4d4a253e1b471a3f63734d6" %}
 
 package:
   name: '{{ name|lower }}'
