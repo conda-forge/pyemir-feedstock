@@ -15,7 +15,6 @@ source:
 
 build:
   number: 1000
-  skip: True  # [win]
   entry_points:
     - pyemir-apply_rectification_only = emirdrp.tools.apply_rectification_only:main
     - pyemir-apply_rectwv_coeff = emirdrp.processing.wavecal.apply_rectwv_coeff:main
