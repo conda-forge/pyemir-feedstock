@@ -83,26 +83,6 @@ test:
     - emirdrp.tests
     - emirdrp.tools
     - emirdrp.util
-  commands:
-    - pyemir-apply_rectification_only --help
-    - pyemir-apply_rectwv_coeff --help
-    - pyemir-continuum_flatfield --help
-    # - pyemir-convert_refined_multislit_param --help
-    - pyemir-display_slitlet_arrangement --help
-    - pyemir-fit_boundaries --help
-    - pyemir-median_slitlets_rectified --help
-    - pyemir-merge_bounddict_files --help
-    - pyemir-merge2images --help
-    - pyemir-rectwv_coeff_add_longslit_model --help
-    - pyemir-rect_wpoly_for_mos --help
-    - pyemir-rectwv_coeff_from_arc_image --help
-    - pyemir-rectwv_coeff_from_mos_library --help
-    - pyemir-rectwv_coeff_to_ds9 --help
-    - pyemir-select_unrectified_slitlets --help
-    - pyemir-slitlet_boundaries_from_continuum --help
-    - pyemir-overplot_boundary_model --help
-    - pyemir-overplot_bounddict --help
-
 about:
   home: http://guaix.fis.ucm.es/projects/emir
   license: GPL-3.0
