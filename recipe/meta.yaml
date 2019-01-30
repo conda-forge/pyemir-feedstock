@@ -1,8 +1,8 @@
 {% set name = "pyemir" %}
-{% set version = "0.11" %}
+{% set version = "0.12" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "1b25bc32f448efb354c320b2c456794ce2bbe868a4d4a253e1b471a3f63734d6" %}
+{% set hash_value = "993319a86899ffcdd32ff8e703eeb53a133fa7f06dd687fd7be6d5b718d76181" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1000
+  number: 0
   entry_points:
     - pyemir-apply_rectification_only = emirdrp.tools.apply_rectification_only:main
     - pyemir-apply_rectwv_coeff = emirdrp.processing.wavecal.apply_rectwv_coeff:main
@@ -83,26 +83,6 @@ test:
     - emirdrp.tests
     - emirdrp.tools
     - emirdrp.util
-  commands:
-    - pyemir-apply_rectification_only --help
-    - pyemir-apply_rectwv_coeff --help
-    - pyemir-continuum_flatfield --help
-    # - pyemir-convert_refined_multislit_param --help
-    - pyemir-display_slitlet_arrangement --help
-    - pyemir-fit_boundaries --help
-    - pyemir-median_slitlets_rectified --help
-    - pyemir-merge_bounddict_files --help
-    - pyemir-merge2images --help
-    - pyemir-rectwv_coeff_add_longslit_model --help
-    - pyemir-rect_wpoly_for_mos --help
-    - pyemir-rectwv_coeff_from_arc_image --help
-    - pyemir-rectwv_coeff_from_mos_library --help
-    - pyemir-rectwv_coeff_to_ds9 --help
-    - pyemir-select_unrectified_slitlets --help
-    - pyemir-slitlet_boundaries_from_continuum --help
-    - pyemir-overplot_boundary_model --help
-    - pyemir-overplot_bounddict --help
-
 about:
   home: http://guaix.fis.ucm.es/projects/emir
   license: GPL-3.0
