@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - pyemir-apply_rectification_only = emirdrp.tools.apply_rectification_only:main
     - pyemir-apply_rectwv_coeff = emirdrp.processing.wavecal.apply_rectwv_coeff:main
@@ -51,7 +51,7 @@ requirements:
     - numina >=0.21
     - astropy >=2
     - enum34  # [py27]
-    - matplotlib
+    - matplotlib-base
     - six
     - photutils >=0.2
     - sep >0.5
