@@ -1,20 +1,17 @@
 {% set name = "pyemir" %}
-{% set version = "0.14" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "347166c77c9cdfcda09b9be87def5726371a8b4d4442e90490e138622ed70139" %}
+{% set version = "0.15.0" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 10e68d572ddf8adca1fbed7259f7aa428493fa035d9904206581d34702eba542
 
 build:
-  number: 2
+  number: 0
   entry_points:
     - pyemir-apply_rectification_only = emirdrp.tools.apply_rectification_only:main
     - pyemir-apply_rectwv_coeff = emirdrp.processing.wavecal.apply_rectwv_coeff:main
@@ -36,7 +33,7 @@ build:
     - pyemir-slitlet_boundaries_from_continuum = emirdrp.tools.slitlet_boundaries_from_continuum:main
     - pyemir-overplot_boundary_model = emirdrp.processing.wavecal.overplot_boundary_model:main
     - pyemir-overplot_bounddict = emirdrp.tools.overplot_bounddict:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -99,5 +96,5 @@ about:
   dev_url: https://github.com/guaix-ucm/pyemir
 
 extra:
-  recipe-maintainers: 
+  recipe-maintainers:
     - sergiopasra
