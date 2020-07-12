@@ -84,7 +84,7 @@ test:
     - emirdrp.util
 about:
   home: http://guaix.fis.ucm.es/projects/emir
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
   summary: EMIR Data Processing Pipeline
