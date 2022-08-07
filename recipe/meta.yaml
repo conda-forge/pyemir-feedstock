@@ -45,16 +45,16 @@ requirements:
     - setuptools
     - numpy
     - scipy
-    - numina >=0.21
+    - numina >=0.22
     - astropy >=2
-    - enum34  # [py27]
     - matplotlib-base
     - six
     - photutils >=0.2
     - sep >0.5
-    - scikit-image >=0.11
+    - scikit-image >=0.18
     - scikit-learn >=0.19
     - lmfit
+    - reproject
 
 test:
   imports:
