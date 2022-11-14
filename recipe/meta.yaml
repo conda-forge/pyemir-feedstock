@@ -1,5 +1,5 @@
 {% set name = "pyemir" %}
-{% set version = "0.17.0" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: faaa022e89bdabffb82a9b382b1b2f4c4176dae9d8e1e23e4679a77a5cb01d41
+  sha256: a2f80b892fe7c9cf6a7e619a2d0fbe77df694049d6981bcf236b8c7903f3f90b
 
 build:
   number: 0
