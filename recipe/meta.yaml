@@ -11,7 +11,8 @@ source:
   sha256: a2f80b892fe7c9cf6a7e619a2d0fbe77df694049d6981bcf236b8c7903f3f90b
 
 build:
-  number: 0
+  number: 1
+  skip: true  # [win]
   entry_points:
     - pyemir-apply_rectification_only = emirdrp.tools.apply_rectification_only:main
     - pyemir-apply_rectwv_coeff = emirdrp.processing.wavecal.apply_rectwv_coeff:main
