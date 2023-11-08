@@ -59,6 +59,7 @@ requirements:
     - scikit-learn >=0.19
     - lmfit
     - reproject
+    - importlib-resources
 
 test:
   imports:
