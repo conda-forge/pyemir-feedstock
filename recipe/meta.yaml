@@ -1,5 +1,5 @@
 {% set name = "pyemir" %}
-{% set version = "0.19" %}
+{% set version = "0.20" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7b1860a26a496799490c704833babd30186d40e7fe867a51565e4b49fda18dea
+  sha256: e267835e0715b48b78cada6dd32cc78c8c645e9ae297006436a617f76dd0fc56
 
 build:
   number: 0
@@ -59,6 +59,7 @@ requirements:
     - scikit-learn >=0.19
     - lmfit
     - reproject
+    - importlib-resources
 
 test:
   imports:
