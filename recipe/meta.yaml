@@ -11,7 +11,7 @@ source:
   sha256: e267835e0715b48b78cada6dd32cc78c8c645e9ae297006436a617f76dd0fc56
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   entry_points:
     - pyemir-apply_rectification_only = emirdrp.tools.apply_rectification_only:main
