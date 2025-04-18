@@ -1,5 +1,5 @@
 {% set name = "pyemir" %}
-{% set version = "0.22" %}
+{% set version = "0.22.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ebdfddefdf6844b00e9f7942259ae2f098f5e08743d49b21ca934e738d496956
+  sha256: 43792c089e4d0cbf6727b2815feec7630f0dd0c1b2ff71ee1aa277276e4ba149
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
   entry_points:
     - pyemir-apply_rectification_only = emirdrp.tools.apply_rectification_only:main
