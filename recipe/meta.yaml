@@ -48,12 +48,12 @@ requirements:
     - python
     - setuptools
     - numpy
-    - scipy >= 1.8
+    - scipy >=1.8
     - numina >=0.32
     - astropy-base >=2
     - matplotlib-base
-    - photutils >= 1.4
-    - sep >= 1.4.0
+    - photutils >=1.4
+    - sep >=1.4.0
     - scikit-image >=0.22
     - scikit-learn >=0.19
     - lmfit
